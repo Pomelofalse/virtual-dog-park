@@ -98,19 +98,55 @@
           <label for="dog-name">Dog's name</label>
           <input id="dog-name" name="dogName" type="text" maxlength="20" autocomplete="off" placeholder="For example, Buddy">
           <p class="field-hint">Up to 20 characters. Spaces at the beginning and end are removed.</p>
+
           <label for="dog-breed">Choose a breed</label>
           <select id="dog-breed" name="breed">
             <option value="Beagle">Beagle</option>
             <option value="Golden Retriever">Golden Retriever</option>
             <option value="Poodle">Poodle</option>
           </select>
+
           <button class="button button-primary" type="submit">Adopt</button>
           <p class="form-message" id="adoption-message" role="status" aria-live="polite"></p>
         </form>
 
         <section class="panel pet-panel" id="pet-panel" aria-labelledby="pet-title" hidden>
-          <h3 id="pet-title">A new friend</h3>
-          <p><strong id="pet-name"></strong> is a <span id="pet-breed"></span>.</p>
+          <div class="pet-heading">
+            <div>
+              <p class="eyebrow">Your park pal</p>
+              <h3 id="pet-title">A new friend</h3>
+            </div>
+            <span class="pet-badge">Day <span id="pet-day">1</span></span>
+          </div>
+
+          <dl class="pet-details">
+            <div><dt>Name</dt><dd id="pet-name"></dd></div>
+            <div><dt>Breed</dt><dd id="pet-breed"></dd></div>
+            <div><dt>Growth stage</dt><dd id="pet-stage">Puppy</dd></div>
+          </dl>
+
+          <div class="growth-block">
+            <div class="growth-labels">
+              <label for="growth-meter">Growing up</label>
+              <span id="growth-description">Puppy · Day 1</span>
+            </div>
+            <progress id="growth-meter" max="100" value="34">34%</progress>
+          </div>
+
+          <div class="happiness-row">
+            <label for="happiness-meter">Happiness</label>
+            <meter id="happiness-meter" min="0" max="100" value="50">50 out of 100</meter>
+            <span id="happiness-value">50 / 100</span>
+          </div>
+
+          <div class="pet-actions">
+            <button class="button button-secondary" id="feed-button" type="button">Feed +10</button>
+            <button class="button button-secondary" id="play-button" type="button">Play +10</button>
+            <button class="button button-secondary" id="next-day-button" type="button">Next Day</button>
+            <button class="button button-quiet" id="start-over-button" type="button">Start Over</button>
+          </div>
+          <p class="field-hint">Next Day simulates time; you do not need to wait for a real day. Progress is saved in this browser on this device, not in your GitHub account.</p>
+          <p class="form-message" id="storage-message" role="status" aria-live="polite"></p>
         </section>
       </div>
     </section>

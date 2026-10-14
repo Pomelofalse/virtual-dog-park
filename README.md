@@ -1,3 +1,3 @@
 # Virtual Dog Park
 
-Round 2 adds a dog adoption form with name validation and a safe text-only summary. The page uses plain HTML, CSS and JavaScript.
+Round 3 adds a virtual pet with happiness controls, growth stages, saved browser progress, and a reset action. Progress is stored locally in the same browser and device.

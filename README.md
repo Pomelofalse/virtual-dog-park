@@ -1,6 +1,6 @@
 # Virtual Dog Park
 
-A small, beginner-friendly dog encyclopedia and virtual pet website for the AIE1101 Week 5 visual lab. The project uses plain HTML, CSS and JavaScript without a framework, server or external image service.
+A small, beginner-friendly dog encyclopedia and virtual pet website for the AIE1101 Week 5 visual lab. The project uses plain HTML, CSS and JavaScript without a framework or backend; all illustrations are stored locally.
 
 ## Features
 

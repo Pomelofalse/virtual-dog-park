@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet three friendly dog breeds in a small virtual dog park.">
+  <title>Virtual Dog Park</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Virtual Dog Park home">
+      <span class="brand-mark" aria-hidden="true">🐾</span>
+      <span>Virtual Dog Park</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#encyclopedia">Dog encyclopedia</a>
+      <a href="#my-dog">Adopt a dog</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A small park for curious dog lovers</p>
+        <h1 id="hero-title">Meet your new favourite breed.</h1>
+        <p class="hero-intro">Explore three friendly breeds, learn a little about their care, and make yourself at home.</p>
+        <a class="button button-primary" href="#encyclopedia">Meet the dogs</a>
+      </div>
+      <div class="hero-sticker" aria-hidden="true">
+        <span class="sticker-paw">🐾</span>
+        <span>Good dogs<br>and fresh air</span>
+      </div>
+    </section>
+
+    <section class="section" id="encyclopedia" aria-labelledby="encyclopedia-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The dog encyclopedia</p>
+          <h2 id="encyclopedia-title">Three lovely neighbours</h2>
+        </div>
+        <p class="section-note">Every dog is an individual. These are friendly starting points, not strict rules.</p>
+      </div>
+
+      <div class="breed-grid">
+        <article class="breed-card">
+          <img src="assets/beagle.svg" alt="Original illustration of a Beagle">
+          <div class="breed-copy">
+            <p class="breed-number">01 · Curious explorer</p>
+            <h3>Beagle</h3>
+            <dl class="breed-facts">
+              <div><dt>Size</dt><dd>Small to medium</dd></div>
+              <div><dt>Personality</dt><dd>Curious, merry and friendly</dd></div>
+              <div><dt>Everyday care</dt><dd>Enjoys walks, play and sniffing games</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="breed-card">
+          <img src="assets/golden-retriever.svg" alt="Original illustration of a Golden Retriever">
+          <div class="breed-copy">
+            <p class="breed-number">02 · Gentle sunshine</p>
+            <h3>Golden Retriever</h3>
+            <dl class="breed-facts">
+              <div><dt>Size</dt><dd>Large</dd></div>
+              <div><dt>Personality</dt><dd>Gentle, social and eager to learn</dd></div>
+              <div><dt>Everyday care</dt><dd>Needs daily activity and coat brushing</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="breed-card">
+          <img src="assets/poodle.svg" alt="Original illustration of a Poodle">
+          <div class="breed-copy">
+            <p class="breed-number">03 · Clever companion</p>
+            <h3>Poodle</h3>
+            <dl class="breed-facts">
+              <div><dt>Size</dt><dd>Varies by type</dd></div>
+              <div><dt>Personality</dt><dd>Clever, lively and people-focused</dd></div>
+              <div><dt>Everyday care</dt><dd>Benefits from play and regular grooming</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made for a little learning and a lot of tail-wagging.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>

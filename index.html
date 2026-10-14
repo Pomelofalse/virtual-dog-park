@@ -84,6 +84,36 @@
         </article>
       </div>
     </section>
+    <section class="section" id="my-dog" aria-labelledby="my-dog-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Your turn</p>
+          <h2 id="my-dog-title">Adopt a park pal</h2>
+        </div>
+        <p class="section-note">Choose one breed and give your new friend a name.</p>
+      </div>
+
+      <div class="adoption-layout">
+        <form class="panel adoption-form" id="adoption-form">
+          <label for="dog-name">Dog's name</label>
+          <input id="dog-name" name="dogName" type="text" maxlength="20" autocomplete="off" placeholder="For example, Buddy">
+          <p class="field-hint">Up to 20 characters. Spaces at the beginning and end are removed.</p>
+          <label for="dog-breed">Choose a breed</label>
+          <select id="dog-breed" name="breed">
+            <option value="Beagle">Beagle</option>
+            <option value="Golden Retriever">Golden Retriever</option>
+            <option value="Poodle">Poodle</option>
+          </select>
+          <button class="button button-primary" type="submit">Adopt</button>
+          <p class="form-message" id="adoption-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <section class="panel pet-panel" id="pet-panel" aria-labelledby="pet-title" hidden>
+          <h3 id="pet-title">A new friend</h3>
+          <p><strong id="pet-name"></strong> is a <span id="pet-breed"></span>.</p>
+        </section>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

@@ -1,5 +1,3 @@
 # Virtual Dog Park
 
-Round 1: a responsive dog encyclopedia with Beagle, Golden Retriever and Poodle cards, plus three original local SVG illustrations.
-
-Open index.html with a local web server such as VS Code Live Server.
+Round 2 adds a dog adoption form with name validation and a safe text-only summary. The page uses plain HTML, CSS and JavaScript.
